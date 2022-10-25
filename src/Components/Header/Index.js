@@ -3,7 +3,7 @@ import React from "react"
 function Header(){
 
     return(
-        <header className="flex justify-between w-100 p-3 bg-sky-500 text-white">
+        <header className="flex justify-between w-100 p-3 bg-orange-400 text-white">
             <a href="navbar-brand font-bold">Logo</a>
             <nav>
                 <ul className="flex">
