@@ -8,7 +8,7 @@ export default function Artikel({title,author,url,points,num_comments}){
 
     
     return(
-        <div className="display: flex justify-between my-8 box-border h-50 w-50 p-4 border-4">
+        <div className=" flex justify-between my-8 box-border h-50 w-50 p-4 border-4">
             <div  className="" >
             <h3 className="text-white" >{title}</h3>
             <p className="text-orange-200">{subtitle}</p>
