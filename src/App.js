@@ -6,7 +6,7 @@ import Footer from './Components/Footer/Index.js'
 
 function App() {
   return (
-    <div className='bg-sky-600'>
+    <div>
       <Header />
       <Main />
       <Footer />
