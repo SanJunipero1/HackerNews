@@ -1,9 +1,10 @@
 import React from "react"
-
+import DataFetch from "./DataFetch"
 function Main(){
     return(
         <main>
-            <h1>Main</h1>
+            
+            <DataFetch />
         </main>
     )
 }
