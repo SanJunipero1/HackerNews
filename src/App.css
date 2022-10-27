@@ -555,6 +555,106 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.top-9 {
+  top: 2.25rem;
+}
+
+.right-9 {
+  right: 2.25rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.top-11 {
+  top: 2.75rem;
+}
+
+.top-14 {
+  top: 3.5rem;
+}
+
+.right-14 {
+  right: 3.5rem;
+}
+
+.top-12 {
+  top: 3rem;
+}
+
+.right-12 {
+  right: 3rem;
+}
+
+.right-11 {
+  right: 2.75rem;
+}
+
+.right-7 {
+  right: 1.75rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mr-7 {
+  margin-right: 1.75rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mr-3\.5 {
+  margin-right: 0.875rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -615,6 +715,7 @@ video {
 
 .box-border {
   box-sizing: border-box;
+
 }
 
 .block {
@@ -625,17 +726,34 @@ video {
   display: flex;
 }
 
+.h-0\.5 {
+  height: 0.125rem;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.w-8 {
+  width: 2rem;
+
 .h-5 {
   height: 1.25rem;
 }
 
 .w-full {
   width: 100%;
+
 }
 
 .w-5 {
   width: 1.25rem;
 }
+
 
 .items-center {
   align-items: center;
@@ -648,6 +766,23 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.rounded-bl-md {
+  border-bottom-left-radius: 0.375rem;
+}
+
+.rounded-br-md {
+  border-bottom-right-radius: 0.375rem;
+}
+
+.bg-orange-500 {
 
 .rounded {
   border-radius: 0.25rem;
@@ -676,9 +811,25 @@ video {
 }
 
 .bg-sky-500 {
+
   --tw-bg-opacity: 1;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
+
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-slate-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+}
+
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
 
 .bg-blue-500 {
   --tw-bg-opacity: 1;
@@ -693,6 +844,7 @@ video {
 .bg-blue-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+
 }
 
 .p-5 {
@@ -703,14 +855,52 @@ video {
   padding: 0.75rem;
 }
 
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
 .p-4 {
   padding: 1rem;
+
 }
 
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+
+
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 
 .px-4 {
   padding-left: 1rem;
@@ -728,6 +918,12 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -742,6 +938,40 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-slate-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+
+.hover\:text-slate-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.hover\:text-slate-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(71 85 105 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:visible {
+    visibility: visible;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:bg-slate-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 
 .text-orange-200 {
   --tw-text-opacity: 1;
@@ -853,5 +1083,6 @@ video {
   .dark\:focus\:ring-blue-800:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgb(30 64 175 / var(--tw-ring-opacity));
+
   }
 }
