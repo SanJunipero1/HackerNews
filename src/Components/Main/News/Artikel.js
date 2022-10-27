@@ -47,11 +47,13 @@ export default function Artikel({title,author,url,points,num_comments,time,objec
 
 
 
-    const timeLink= <a href={link} target="_blank">{Difference_In_Days_String }</a>
-    const commentLink = <a href={link} target="_blank">{commentsString}</a>
-    const userlink= <a href={linkU} target="_blank">{author}</a>
-    const hideLink = <a href={linkHide} target="_blank" className=" line-through ">| hide |</a>
-    const upvoteLink =<a href={linkUp} target="_blank">△  </a>
+    const timeLink= <a href={link} target="_blank" className=" hover:underline ">{Difference_In_Days_String }</a>
+
+    const commentLink = <a href={link} target="_blank " className=" hover:underline ">{commentsString}</a>
+
+    const userlink = <a href={linkU} target="_blank" className=" hover:underline ">{author}</a>
+    const hideLink = <a href={linkHide} target="_blank" className=" hover:underline ">| hide |</a>
+    const upvoteLink =<a href={linkUp} target="_blank" className=" hover:underline ">△  </a>
    
     const subtitle1 =`${points} points by` 
     
