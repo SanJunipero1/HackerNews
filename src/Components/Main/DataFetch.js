@@ -2,28 +2,29 @@ import React, { useEffect, useState } from "react";
 import News from "./News/Index"
 import LoadinigInfo from "./Assests/LoadingInfo";
 import Search from "./News/Search";
+import CircularProgress from '@mui/material/CircularProgress'
 
 
 export default function DataFetch(){
-    // const url = "https://jsonplaceholder.typicode.com/users"
-   // const url = "http://hn.algolia.com/api/v1/search?query=react"
    
+   const[loadingArticle,setLoadingArticle]=useState(false)
     
 
     
     const[news,setNews]=useState([])
-    const[isLoading,setIsLoading]=useState(false)
     const [searchValue, setSearchValue] = useState("react")
     
     function getData(){
-       
+        setLoadingArticle(true)
+        setTimeout(()=>{
+        
         fetch(`http://hn.algolia.com/api/v1/search?query=${searchValue}`) 
         .then(response=>response.json()) 
         .then(data => setNews(data.hits)) 
    
-        
+        setLoadingArticle(false)
        
-    
+    },5000)
     }
     console.log(news)
   
@@ -32,9 +33,12 @@ export default function DataFetch(){
     },[searchValue])
    
     
-    if(isLoading){
+    if(loadingArticle){
         return(
-          <LoadinigInfo title={"Artikel"} />  
+            <div className=" flex">
+          <CircularProgress/>
+          <h1 className=" text-white text-9xl" >Loading.....</h1>
+          </div>
         )
     }
     

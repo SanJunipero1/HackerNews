@@ -6,10 +6,16 @@ import Footer from './Components/Footer/Index.js'
 
 function App() {
   return (
-    <div>
+    <div className='bg-lightBlack'>
+      <div className='bg-lightOrange'>
       <Header />
+      </div>
+     <div className=" container mx-auto mt-5">
       <Main />
+      </div>
+      <div className='bg-lightOrange'>
       <Footer />
+      </div>
     </div>
   );
 }
