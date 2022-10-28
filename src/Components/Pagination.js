@@ -10,10 +10,10 @@ export default function Pagination({totalPosts, postsPerPage,setCurrentPage}){
 
     
     return(
-        <div>
+        <div className="flex justify-center">
         {
             pages.map((page,index) =>{
-                return <button className="bg-lightOrange hover:bg-darkOrange text-white font-bold py-2 px-4 rounded-l m-1 m-l-10 justify-content-center " onClick={()=>setCurrentPage(page)} key={index}>{page}</button>
+                return <button className="bg-lightOrange hover:bg-darkOrange text-white font-bold py-2 px-4 rounded-md mx-1" onClick={()=>setCurrentPage(page)} key={index}>{page}</button>
             })
         }
         </div>
