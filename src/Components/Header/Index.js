@@ -5,7 +5,7 @@ function Header(){
     return(
 
         <header className="flex justify-between w-100 p-3 bg-orange-500 mb-5">
-            <a href="/" className="text-2xl font-medium">Hacker News</a>
+            <a href="/" className="text-2xl font-medium text-white">Hacker News</a>
             <Nav />
         </header>
  

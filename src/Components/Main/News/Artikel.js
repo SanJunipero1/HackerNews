@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 
 export default function Artikel({title,author,url,points,num_comments,time,objectID}){
-    console.log(objectID)
+    
     const actualTime = new Date()
     const oldTime= new Date (time)
 
@@ -47,13 +47,13 @@ export default function Artikel({title,author,url,points,num_comments,time,objec
 
 
 
-    const timeLink= <a href={link} target="_blank" className=" hover:underline ">{Difference_In_Days_String }</a>
+    const timeLink= <a href={link} target="_blank" className=" hover:underline hover:text-darkgrey">{Difference_In_Days_String }</a>
 
-    const commentLink = <a href={link} target="_blank " className=" hover:underline ">{commentsString}</a>
+    const commentLink = <a href={link} target="_blank " className=" hover:underline hover:text-darkgrey">{commentsString}</a>
 
-    const userlink = <a href={linkU} target="_blank" className=" hover:underline ">{author}</a>
-    const hideLink = <a href={linkHide} target="_blank" className=" hover:underline ">| hide |</a>
-    const upvoteLink =<a href={linkUp} target="_blank" className=" hover:underline ">△  </a>
+    const userlink = <a href={linkU} target="_blank" className=" hover:underline hover:text-darkgrey">{author}</a>
+    const hideLink = <a href={linkHide} target="_blank" className=" hover:underline hover:text-darkgrey">| hide |</a>
+    const upvoteLink =<a href={linkUp} target="_blank" className=" hover:text-lightOrange hover:underline">△  </a>
    
     const subtitle1 =`${points} points by` 
     
@@ -63,13 +63,13 @@ export default function Artikel({title,author,url,points,num_comments,time,objec
     
     return(
       
-        <div className=" bg-lightOrange flex justify-between my-8 box-border   p-4 border-4 border-lightPurple rounded-xl">
+        <div className=" bg-white flex justify-between my-8 box-border   p-4 border-b-2 border-grey  ">
             
             <div  className=" " >
-            <h3 className="text-white" >{upvoteLink}{title}</h3>
-            <p className="text-darkPurple">{subtitle1} {userlink} {timeLink} {hideLink} {commentLink} </p>
+            <h3 className="text-black text-xl " >{upvoteLink}{title}</h3>
+            <p className="text-grey ">{subtitle1} {userlink} {timeLink} {hideLink} {commentLink} </p>
             </div>
-            <a href={url} target="_blank" className="text-white"><button className="bg-lightPurple hover:bg-darkPurple text-white font-bold py-2 px-4 rounded">Continue</button></a>
+            <a href={url} target="_blank" className="text-white"><button className="bg-lightOrange hover:bg-darkOrange text-white font-bold py-2 px-4 rounded">Continue</button></a>
            
         </div>
     )
