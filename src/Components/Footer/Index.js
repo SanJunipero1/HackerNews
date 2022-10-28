@@ -4,7 +4,7 @@ import FooterList from "./FooterList";
 
 export default function Footer(){
     return(
-        <footer className="w-full bg-orange-400 flex text-white justify-center p-2.5">
+        <footer className="w-full bg-black flex text-white justify-center p-2.5 b-t-2 b-lightOrange">
             <div className="w-4/5 block">
                 <div className="uppercase text-l flex text-white font-bold m-2.5 justify-center">
                 <a href="#">Kontakt</a>

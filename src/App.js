@@ -10,7 +10,7 @@ function App() {
       <div className='bg-lightOrange'>
       <Header />
       </div>
-     <div className=" container mx-auto mt-5">
+     <div className=" container mx-auto mt-5 mb-10">
       <Main />
       </div>
       <div className='bg-lightOrange'>

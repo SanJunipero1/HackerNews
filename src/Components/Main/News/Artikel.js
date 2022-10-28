@@ -22,6 +22,9 @@ export default function Artikel({title,author,url,points,num_comments,time,objec
     
     let Difference_In_Days = Math.floor(differenceTime / (1000 * 3600 * 24))
     let Difference_In_Days_String = `${Difference_In_Days} Days ago`
+
+    let Difference_In_Years = Math.floor(Difference_In_Days /365)
+    console.log(Difference_In_Years)
   
  
 
@@ -35,11 +38,15 @@ export default function Artikel({title,author,url,points,num_comments,time,objec
     
     }else if(Difference_In_Hours < 24){
         Difference_In_Days_String = `${Difference_In_Hours} Hours ago`
+
     
 
     }else if(Difference_In_Days > 365){
         Difference_In_Days = Math.floor(Difference_In_Days /365)
         Difference_In_Days_String = `${Difference_In_Days} Years ago`
+    
+       
+  
     }
 
 

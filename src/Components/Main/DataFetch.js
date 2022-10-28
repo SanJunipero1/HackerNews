@@ -18,6 +18,11 @@ export default function DataFetch(){
     const [searchValue, setSearchValue] = useState("react")
     
     function getData(){
+       
+        
+        
+        
+        
         setLoadingArticle(true)
         setTimeout(()=>{
         

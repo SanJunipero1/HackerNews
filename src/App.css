@@ -709,6 +709,10 @@ video {
   margin-right: 1.5rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -837,6 +841,11 @@ video {
   background-color: rgb(238 86 34 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 26 30 / var(--tw-bg-opacity));
+}
+
 .bg-orange-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(238 86 34 / var(--tw-bg-opacity));
@@ -918,7 +927,7 @@ video {
 
 .text-black {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(30 26 30 / var(--tw-text-opacity));
 }
 
 .text-grey {
@@ -936,9 +945,9 @@ video {
   background-color: rgb(183 59 17 / var(--tw-bg-opacity));
 }
 
-.hover\:text-black:hover {
+.hover\:text-darkgrey:hover {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(88 88 88 / var(--tw-text-opacity));
 }
 
 .hover\:text-lightOrange:hover {
@@ -946,28 +955,8 @@ video {
   color: rgb(238 86 34 / var(--tw-text-opacity));
 }
 
-.hover\:text-grey:hover {
-  --tw-text-opacity: 1;
-  color: rgb(175 172 172 / var(--tw-text-opacity));
-}
-
-.hover\:text-darkgrey:hover {
-  --tw-text-opacity: 1;
-  color: rgb(88 88 88 / var(--tw-text-opacity));
-}
-
 .hover\:underline:hover {
   text-decoration-line: underline;
-}
-
-.focus\:border-lightOrange:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(238 86 34 / var(--tw-border-opacity));
-}
-
-.focus\:border-darkOrange:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(183 59 17 / var(--tw-border-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -984,11 +973,6 @@ video {
 .focus\:ring-lightOrange:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(238 86 34 / var(--tw-ring-opacity));
-}
-
-.focus\:ring-darkOrange:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(183 59 17 / var(--tw-ring-opacity));
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1012,24 +996,9 @@ video {
     color: rgb(34 30 34 / var(--tw-placeholder-opacity));
   }
 
-  .dark\:hover\:bg-lightOrange:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(238 86 34 / var(--tw-bg-opacity));
-  }
-
   .dark\:hover\:bg-darkOrange:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(183 59 17 / var(--tw-bg-opacity));
-  }
-
-  .dark\:focus\:border-lightOrange:focus {
-    --tw-border-opacity: 1;
-    border-color: rgb(238 86 34 / var(--tw-border-opacity));
-  }
-
-  .dark\:focus\:ring-lightOrange:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(238 86 34 / var(--tw-ring-opacity));
   }
 
   .dark\:focus\:ring-darkOrange:focus {
